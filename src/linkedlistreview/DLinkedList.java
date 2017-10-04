@@ -36,4 +36,16 @@ public class DLinkedList {
     public String get(int element){
         return getNode(element).value;
     }
+    public boolean contains(Node target){
+        Node temp = head;
+        boolean flag = false;
+        while(temp.next != null){
+            if(temp == target){
+                flag = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        return flag;
+    }
 }

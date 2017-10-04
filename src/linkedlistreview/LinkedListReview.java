@@ -7,7 +7,7 @@ public class LinkedListReview {
         
         //Kyla Testing
             //addLast and getLast
-        list.addLast("This");
+        list.addLast("this");
         System.out.println(list.getLast());
         list.addLast("works");
         System.out.println(list.getLast());
@@ -17,6 +17,11 @@ public class LinkedListReview {
             //getNode and get
         System.out.println(list.get(0));
         System.out.println(list.get(1));
+        
+        System.out.println("------------------------------");
+        
+            //contains
+        System.out.println(list.contains(list.getNode(0)));
         
         //Tom Testing
     }
