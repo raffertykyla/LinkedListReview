@@ -21,7 +21,15 @@ public class LinkedListReview {
         System.out.println("------------------------------");
         
             //contains
-        System.out.println(list.contains(list.getNode(0)));
+        System.out.println(list.contains("this"));
+        System.out.println(list.contains("no"));
+        
+        System.out.println("------------------------------");
+        
+            //insertAfter
+        list.insertAfter("this", "really");
+        list.insertAfter("no", "properly");
+        System.out.println(list.getLast());
         
         //Tom Testing
     }
