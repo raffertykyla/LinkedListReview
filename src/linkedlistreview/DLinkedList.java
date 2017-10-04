@@ -117,7 +117,7 @@ public class DLinkedList {
         temp = head;
         int num = 0;
         while (temp.next != null) {
-            if (temp.next.value == target) {
+            if (temp.next.value.equals(target)) {
                 temp.next = new Node(val, temp, temp.next);
                 num = -100;
                 break;
