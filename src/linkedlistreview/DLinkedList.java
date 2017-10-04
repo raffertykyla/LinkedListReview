@@ -6,6 +6,7 @@ public class DLinkedList {
     public DLinkedList(){
         head = null;
     }
+    //Kyla
     public void addLast(String value){
         Node temp = head;
         if(head == null){
@@ -61,5 +62,19 @@ public class DLinkedList {
         }else{
             addLast(value);
         }
+    }
+
+    //Tom 
+    public void addFirst(String value) {
+        if (head != null) {
+            Node temp = head;
+            head = new Node(value, null, temp);
+        } else {
+            head = new Node(value, null, null);
+        }
+        
+    } 
+    public String getFirst() {
+        return head.value;
     }
 }

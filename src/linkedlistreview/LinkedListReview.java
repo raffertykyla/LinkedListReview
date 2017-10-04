@@ -31,7 +31,11 @@ public class LinkedListReview {
         list.insertAfter("no", "properly");
         System.out.println(list.getLast());
         
+        System.out.println("------------------------------");
         //Tom Testing
+        list.addFirst("two");
+        list.addFirst("one");
+        System.out.println(list.getFirst());
     }
     
 }
