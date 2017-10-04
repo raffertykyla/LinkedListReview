@@ -24,4 +24,16 @@ public class DLinkedList {
         }
         return temp.value;
     }
+    public Node getNode(int element){
+        Node temp = head;
+        for(int i = 0; i < element; i++){
+            while(temp.next != null){
+                temp = temp.next;
+            }
+        }
+        return temp;
+    }
+    public String get(int element){
+        return getNode(element).value;
+    }
 }

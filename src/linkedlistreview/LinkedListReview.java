@@ -6,11 +6,17 @@ public class LinkedListReview {
         DLinkedList list = new DLinkedList();
         
         //Kyla Testing
+            //addLast and getLast
         list.addLast("This");
         System.out.println(list.getLast());
         list.addLast("works");
         System.out.println(list.getLast());
-        System.out.println(list);
+        
+        System.out.println("------------------------------");
+        
+            //getNode and get
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
         
         //Tom Testing
     }
