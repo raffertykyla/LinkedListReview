@@ -77,4 +77,13 @@ public class DLinkedList {
     public String getFirst() {
         return head.value;
     }
+    public String toString() {
+        Node temp = head;
+        String text = "";
+        while (temp != null) {
+            text += temp.value + " | ";
+            temp = temp.next;
+        }
+        return text;
+    }
 }

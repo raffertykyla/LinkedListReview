@@ -36,6 +36,10 @@ public class LinkedListReview {
         list.addFirst("two");
         list.addFirst("one");
         System.out.println(list.getFirst());
+
+        System.out.println("------------------------------");
+        
+        System.out.println(list.toString());
     }
     
 }
