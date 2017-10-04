@@ -40,6 +40,8 @@ public class LinkedListReview {
         System.out.println("------------------------------");
         
         System.out.println(list.toString());
+        list.insertAt(3, "actually");
+        System.out.println(list.toString());
     }
     
 }

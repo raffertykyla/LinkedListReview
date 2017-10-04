@@ -86,4 +86,25 @@ public class DLinkedList {
         }
         return text;
     }
+    public void insertAt(int ind, String val) {
+        int len = 0;
+        Node temp = head;
+        while (temp.next != null) {
+            len++;
+            temp = temp.next;
+        }
+        temp = head;
+        if (ind <= len && ind != 0) {
+            int num = 0;
+            while (num < ind -1) {
+                temp = temp.next;
+                num++;
+            }
+            temp.next = new Node(val, temp, temp.next);
+        } else if (ind == 0) {
+            addFirst(val);
+        } else {
+            addLast(val);
+        }
+    }
 }
