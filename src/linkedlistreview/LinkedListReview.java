@@ -32,15 +32,31 @@ public class LinkedListReview {
         System.out.println(list.getLast());
         
         System.out.println("------------------------------");
+        
+        
         //Tom Testing
+            //addFirst & getFirst
         list.addFirst("two");
         list.addFirst("one");
         System.out.println(list.getFirst());
 
         System.out.println("------------------------------");
-        
+            //toString
         System.out.println(list.toString());
+        
+        System.out.println("------------------------------");
+            //insertAt
         list.insertAt(3, "actually");
+        System.out.println(list.toString());
+        
+        System.out.println("------------------------------");
+            //insertBefore
+        list.insertBefore("this", "wow");
+        System.out.println(list.toString());
+        
+        System.out.println("------------------------------");
+        
+        list.insertBefore("ths", "impressive");
         System.out.println(list.toString());
     }
     

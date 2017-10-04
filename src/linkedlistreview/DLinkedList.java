@@ -79,7 +79,7 @@ public class DLinkedList {
     }
     public String toString() {
         Node temp = head;
-        String text = "";
+        String text = "| ";
         while (temp != null) {
             text += temp.value + " | ";
             temp = temp.next;
@@ -104,6 +104,27 @@ public class DLinkedList {
         } else if (ind == 0) {
             addFirst(val);
         } else {
+            addLast(val);
+        }
+    }
+    public void insertBefore(String target, String val) {
+        int len = 0;
+        Node temp = head;
+        while (temp.next != null) {
+            len++;
+            temp = temp.next;
+        }
+        temp = head;
+        int num = 0;
+        while (temp.next != null) {
+            if (temp.next.value == target) {
+                temp.next = new Node(val, temp, temp.next);
+                num = -100;
+                break;
+            }
+            temp = temp.next;
+        }
+        if (num != -100) {
             addLast(val);
         }
     }
